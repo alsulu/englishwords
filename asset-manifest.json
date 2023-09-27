@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/englishwords/static/css/main.d307479e.css",
+    "main.js": "/englishwords/static/js/main.fb1fa9b1.js",
+    "static/js/787.e6a024b5.chunk.js": "/englishwords/static/js/787.e6a024b5.chunk.js",
+    "static/media/NotFound.jpg": "/englishwords/static/media/NotFound.66f4b0d6f771756ea9fc.jpg",
+    "index.html": "/englishwords/index.html",
+    "main.d307479e.css.map": "/englishwords/static/css/main.d307479e.css.map",
+    "main.fb1fa9b1.js.map": "/englishwords/static/js/main.fb1fa9b1.js.map",
+    "787.e6a024b5.chunk.js.map": "/englishwords/static/js/787.e6a024b5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d307479e.css",
+    "static/js/main.fb1fa9b1.js"
+  ]
+}
