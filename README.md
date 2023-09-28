@@ -2,8 +2,9 @@
 
 ## Чтобы запустить проект:
 
-
-#### `npm install`
-#### `npm start`
+```
+npm install
+npm start
+```
 
 Затем откройте [http://localhost:3000](http://localhost:3000) в браузере.
