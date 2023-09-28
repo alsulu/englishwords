@@ -48,7 +48,6 @@
     ]
   },
   "proxy": "http://itgirlschool.justmakeit.ru",
-  "homepage": "https://alsulu.github.io/englishwords/",
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }
