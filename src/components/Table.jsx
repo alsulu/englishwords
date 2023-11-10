@@ -1,4 +1,4 @@
-import React, { memo, useEffect } from "react";
+import React, { useEffect } from "react";
 import{ observer, inject } from "mobx-react";
 
 import Row from "./Row";
@@ -11,7 +11,6 @@ import Loading from "./Loading";
 
 const Table = ({ wordsStore }) => {
   const [adding, reverseAdding] = useReverse(false);
-  const [saving, reverseSaving] = useReverse(false);
   
   useEffect(() => wordsStore.getWords(), [])
   

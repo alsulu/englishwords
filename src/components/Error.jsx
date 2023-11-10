@@ -1,4 +1,4 @@
-import React, { Fragment, memo, useEffect } from "react";
+import React, { Fragment, useEffect } from "react";
 import{ observer, inject } from "mobx-react";
 
 import styles from "./assets/styles/error.module.scss";
