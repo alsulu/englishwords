@@ -1,4 +1,4 @@
-# Веб-приложение для изучения английских слов
+# Веб-приложение для изучения английских слов ([https://englishwords-reactjs.netlify.app/](https://englishwords-reactjs.netlify.app/))
 
 ## Чтобы запустить проект:
 
