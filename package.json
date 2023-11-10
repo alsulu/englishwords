@@ -47,7 +47,7 @@
       "last 1 safari version"
     ]
   },
-  "proxy": "http://itgirlschool.justmakeit.ru:splat",
+  "proxy": "http://itgirlschool.justmakeit.ru",
   "devDependencies": {
     "gh-pages": "^6.0.0"
   }
