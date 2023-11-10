@@ -16,7 +16,7 @@ export default class WordsStore {
         this.isLoaded = false;
         this.isError = false;
         
-        fetch('http://itgirlschool.justmakeit.ru/api/words')
+        fetch('https://itgirlschool.justmakeit.ru/api/words')
             .then((response) => {
                 console.log(response);
                 if (response.ok)
@@ -52,7 +52,7 @@ export default class WordsStore {
             russian: values.translation,
         }
 
-        fetch('http://itgirlschool.justmakeit.ru/api/words/add', {
+        fetch('https://itgirlschool.justmakeit.ru/api/words/add', {
             method: 'POST',
             body: JSON.stringify(word),
             headers: {
@@ -93,7 +93,7 @@ export default class WordsStore {
             transcription: values.transcription,
         }
 
-        fetch('http://itgirlschool.justmakeit.ru/api/words/' + id + '/update', {
+        fetch('https://itgirlschool.justmakeit.ru/api/words/' + id + '/update', {
             method: 'POST',
             body: JSON.stringify(word),
             headers: {
@@ -126,7 +126,7 @@ export default class WordsStore {
             id: id,
         }
 
-        fetch('http://itgirlschool.justmakeit.ru/api/words/' + id + '/delete', {
+        fetch('https://itgirlschool.justmakeit.ru/api/words/' + id + '/delete', {
             method: 'POST',
             body: JSON.stringify(word),
             headers: {
