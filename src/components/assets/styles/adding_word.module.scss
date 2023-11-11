@@ -138,6 +138,10 @@
 .add_btn {
     background-color: rgba(197, 71, 92, 0.815);
     border: 1px solid rgb(182, 92, 107);
+
+    &:disabled {
+        opacity: 0.6;
+    }
 }
 
 .close_btn {

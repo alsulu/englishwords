@@ -72,8 +72,8 @@ const Row = ({ wordsStore, word, transcription, translation, id, editing }) => {
                         </td>
                     </React.Fragment>
                 }
+                {deleting && <td className={styles.confirmationDiv}><ConfirmationModal id={id} cancel={reverseDeleting} title={"Подтвердить удаление"} comment={"Вы уверены, что хотите удалить выбранное слово?"} btnName={"Удалить"} /></td>}
             </tr>
-            {deleting && <ConfirmationModal id={id} cancel={reverseDeleting} title={"Подтвердить удаление"} comment={"Вы уверены, что хотите удалить выбранное слово?"} btnName={"Удалить"} />}
         </React.Fragment>
     )
 }

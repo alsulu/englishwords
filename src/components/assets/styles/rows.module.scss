@@ -59,8 +59,7 @@ input {
     border-radius: 3px;
     height: 65%;
 
-    &:disabled[false]:hover,
-    &:disabled[false]:focus {
+    &:disabled[false] {
       box-shadow: 1px 1px 1px 1px lightgray;
       opacity: 0.9;
     }
@@ -101,4 +100,9 @@ input {
 .need_correct {
   color: green;
   background-color: rgb(233, 233, 233);
+}
+
+.confirmationDiv {
+  padding: 0;
+  border: none;
 }

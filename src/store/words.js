@@ -16,9 +16,8 @@ export default class WordsStore {
         this.isLoaded = false;
         this.isError = false;
         
-        fetch('https://itgirlschool.justmakeit.ru/api/words')
+        fetch('/api/words')
             .then((response) => {
-                console.log(response);
                 if (response.ok)
                     return response.json();
                 else {
@@ -35,7 +34,6 @@ export default class WordsStore {
             .catch((error) => {
                 console.log(error);
                 this.isError = true;
-                //setTimeout(() => this.isLoading=false, 5000);
                 this.isLoading = false;
                 this.isLoaded = true;
             })
@@ -52,11 +50,13 @@ export default class WordsStore {
             russian: values.translation,
         }
 
-        fetch('https://itgirlschool.justmakeit.ru/api/words/add', {
+        fetch('/api/words/add', {
             method: 'POST',
             body: JSON.stringify(word),
             headers: {
-                'Content-Type': 'application/json'
+                'Content-Type': 'application/json',
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Request-Headers': 'Content-Type'
             }
         })
             .then((response) => {
@@ -68,7 +68,6 @@ export default class WordsStore {
                 }
             })
             .then((word) => {
-                //console.log(word);
                 this.words.push(word);
                 this.isLoading = false;
                 this.isLoaded = true;
@@ -93,7 +92,7 @@ export default class WordsStore {
             transcription: values.transcription,
         }
 
-        fetch('https://itgirlschool.justmakeit.ru/api/words/' + id + '/update', {
+        fetch('/api/words/' + id + '/update', {
             method: 'POST',
             body: JSON.stringify(word),
             headers: {
@@ -126,7 +125,7 @@ export default class WordsStore {
             id: id,
         }
 
-        fetch('https://itgirlschool.justmakeit.ru/api/words/' + id + '/delete', {
+        fetch('/api/words/' + id + '/delete', {
             method: 'POST',
             body: JSON.stringify(word),
             headers: {
