@@ -7,7 +7,7 @@ import useReverse from '../hooks/useReverse';
 import useValid from '../hooks/useValid';
 import ConfirmationModal from "./ConfirmationModal";
 
-const Row = ({ wordsStore, word, transcription, translation, id, editing }) => {
+const Row = ({ wordsStore, word, transcription, translation, id }) => {
     const [deleting, reverseDeleting] = useReverse(false);
     const [edit, reverseEdit] = useReverse(false);
     const [valid, inputValidation, changeValid] = useValid();

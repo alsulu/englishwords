@@ -19,17 +19,6 @@
   }
 }
 
-/*
-  @media screen and (min-width: $minFull) {
-  }
-  @media screen and (min-width: $minLarge) and (max-width: $maxLarge) {
-  }
-  @media screen and (min-width: $minMedium) and (max-width: $maxMedium) {
-  }
-  @media screen and (max-width: $maxSmall) {
-  }
-*/
-
 th,
 td {
   border: 1px solid gray;
@@ -101,7 +90,7 @@ table {
     font-size: 0.9em;
   }
   @media screen and (max-width: $maxSmall) {
-    width: 45%;
+    width: 100%;
     height: 35px;
     font-size: 0.9em;
   }

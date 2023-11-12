@@ -20,7 +20,7 @@ const AddingWordModal = ({ wordsStore, close} ) => {
         name === "transcription" && setIsTranscriptionChanging(true)
     }
 
-    const addWord = () => {
+    const addWord = (e) => {
         wordsStore.addWord(values);
         close();
     }
@@ -49,7 +49,7 @@ const AddingWordModal = ({ wordsStore, close} ) => {
                         {valid.translation || <span className={styles.error}>Поле заполнено неверно. Убедитесь, что вводите символы кириллицы.</span>}
                     </div>
                     <div>
-                        <button className={styles.add_btn} onClick={addWord} disabled={(valid.word && valid.transcription && valid.translation) ? false : "disabled"}>Добавить</button>
+                        <button className={styles.add_btn} onClick={addWord} disabled={(valid.word && valid.transcription && valid.translation && Object.values(values).filter(el => el === "").length===0) ? false : "disabled"}>Добавить</button>
                         <button className={styles.close_btn} onClick={close}>Закрыть</button>
                     </div>
                 </div>
